@@ -6,13 +6,13 @@ export function loadAgentConfig() {
   const result = dotenv.config();
   if (result.error) throw result.error;
 
-  assert(!!process.env.CONTEXT_ID, `Missing required env var: "CONTEXT_ID"`);
-  assert(!!process.env.IMODEL_ID, `Missing required env var: "IMODEL_ID"`);
-  assert(!!process.env.CLIENT_ID, `Missing required env var: "CLIENT_ID"`);
-  assert(
-    !!process.env.CLIENT_SECRET,
-    `Missing required env var: "CLIENT_SECRET"`
-  );
+  // assert(!!process.env.CONTEXT_ID, `Missing required env var: "CONTEXT_ID"`);
+  // assert(!!process.env.IMODEL_ID, `Missing required env var: "IMODEL_ID"`);
+  // assert(!!process.env.CLIENT_ID, `Missing required env var: "CLIENT_ID"`);
+  // assert(
+  //   !!process.env.CLIENT_SECRET,
+  //   `Missing required env var: "CLIENT_SECRET"`
+  // );
 
   return {
     CONTEXT_ID: process.env.CONTEXT_ID,
